@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>BibleChat</h1>
+    <h2>The only chat bot with the power of God</h2>
+    <div class="chat-container">
+        <div class="chat-box" id="chat-box">
+            <div class="message bot-message">Welcome to the BibleChat!</div>
+        </div>
+        <input type="text" id="user-input" placeholder="Type your message here..." autofocus>
+        <button id="send-btn">Send</button>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
